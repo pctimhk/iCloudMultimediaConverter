@@ -1,4 +1,4 @@
-# iCloud Multimedia Convert in Docker
+# iCloud Photo/Video Workflow and Integration
 
 The project will manage the following functions/features
 1. Download iCloud Photo and Video from iCloud
