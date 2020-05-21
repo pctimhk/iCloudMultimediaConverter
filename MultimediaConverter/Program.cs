@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 
 namespace MultimediaConverter.Docker
 {
@@ -6,7 +7,9 @@ namespace MultimediaConverter.Docker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IConfiguration myConfig = new ConfigurationBuilder().AddJsonFile("appsettings.json", true, true).Build();
+
+            Console.WriteLine($" Hello { myConfig["name"] } !");
         }
     }
 }
